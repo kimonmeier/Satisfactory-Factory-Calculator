@@ -1,12 +1,16 @@
-FROM node:24-alpine
+FROM oven/bun:alpine AS build
 
+WORKDIR /build
 COPY . .
 
-RUN npm ci
-RUN npm run build
+RUN bun i
+RUN bun run build
 
-COPY . .
+FROM oven/bun:alpine AS runtime
+
+WORKDIR /app
+COPY --from=build /build/build ./
 
 EXPOSE 3000
-CMD ["node", "build"]
+CMD ["bun", "index.js"]
 
