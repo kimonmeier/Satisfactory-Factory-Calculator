@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-slate-100 text-slate-900 transition-colors duration-200;
+	}
+
+	[data-theme='dark'] body {
+		@apply bg-slate-900 text-slate-100;
+	}
+
+	/* Optional: Style links for better visibility in dark mode */
+	[data-theme='dark'] a {
+		@apply text-blue-400 hover:text-blue-300;
+	}
+
+	/* Update other global styles as needed */
+}
