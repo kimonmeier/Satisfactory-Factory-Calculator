@@ -2,7 +2,7 @@ FROM node:22-alpine
 
 COPY . .
 
-RUN npm i
+RUN npm ci
 RUN npm run build
 
 COPY . .
