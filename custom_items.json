@@ -1,0 +1,14 @@
+[
+	{
+		"ClassName": "Desc_Carbon_Dust_C",
+		"mDisplayName": "Carbon Dust"
+	},
+	{
+		"ClassName": "Desc_Carbon_Mesh_C",
+		"mDisplayName": "Carbon Mesh"
+	},
+	{
+		"ClassName": "Desc_Photovoltaic_Cell_C",
+		"mDisplayName": "Photovoltaic Cell"
+	}
+]

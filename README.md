@@ -20,7 +20,11 @@ A web-based application to help plan and optimize your factories in the game Sat
 - **Filtering:**
   - Filter the list of factories by name, output item, or floor.
 - **Persistent Storage:**
+
   - Factory configurations and raw material inputs are saved in the browser's local storage.
+
+- **Custom Mod Recipes**
+  - Certain Recipes can be manually added to help manage mod resources
 
 ## Tech Stack
 
